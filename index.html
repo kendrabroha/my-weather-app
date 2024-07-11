@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Kendra's Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app-container">
+      <header>
+        <form id="city-search">
+          <input
+            class="search-bar"
+            type="search"
+            placeholder="Enter a city"
+            required
+            id="city-input"
+          />
+          <input class="search-button" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <h1 class="current-city" id="city-display">Austin</h1>
+        <div class="current-forecast">
+          <p id="date">
+            Thursday 20:47, broken clouds
+            <br />
+            Humidity: <strong>78%</strong>, Wind: <strong>7.2 km/h</strong>
+          </p>
+          <div class="current-weather">
+            <div class="current-temperature">
+              <div class="current-temperature-icon">☀️</div>
+              <div class="current-temperature-value" id="current-temperature">
+                63
+              </div>
+              <div class="current-temperature-unit">℉</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <script src="index.js"></script>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank"> Kendra</a> and is
+          <a href="#" target="_blank"> open-sourced on Github</a>
+          and <a href="#" target="_blank"> hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
